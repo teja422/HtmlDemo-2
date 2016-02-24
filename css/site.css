@@ -1,0 +1,15 @@
+﻿/*Top Banner*/
+.banner {
+  padding: 0 !important;
+}
+.banner .col-xs-12 {
+  padding: 0 !important;
+}
+.banner img {
+  opacity: 0.55 !important;
+}
+/*Services*/
+.services {
+  background-color: #fe9900;
+}
+/*# sourceMappingURL=site.css.map */
