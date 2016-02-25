@@ -3,15 +3,143 @@
 /*Top Banner*/
 .banner {
     padding: 0 !important;
-    .col-xs-12{
-        padding:0 !important;
+
+    .col-xs-12 {
+        padding: 0 !important;
     }
-    img{
-        opacity:0.55 !important;
+
+    img {
+        opacity: 0.55 !important;
     }
 }
 
 /*Services*/
 .services {
     background-color: #fe9900;
+    color: #fff;
+
+    .heading {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 4%;
+    }
+
+    article {
+        border-bottom: 1px solid #fff;
+        line-height: 0.1em;
+        margin: 10px 12% 20px;
+    }
+
+    span {
+        padding: 0 8px;
+        background: #fe9900;
+    }
+
+    .details {
+        margin: auto 6%;
+
+        .paragraph {
+            margin: 12% 5% 5%;
+        }
+
+        .lastheading {
+            margin-bottom: 18%;
+        }
+    }
+
+    .subheading {
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width:361px) {
+    .services {
+        .heading {
+            font-size: 18px;
+        }
+
+        article {
+            margin: 10px 0 20px;
+
+            span {
+                font-size: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width:481px) {
+    .services {
+        .heading {
+            font-size: 20px;
+        }
+
+        article {
+            margin: 10px 6% 20px;
+
+            span {
+                font-size: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:541px) {
+    .services {
+        .heading {
+            font-size: 24px;
+        }
+
+        article {
+            margin: 10px 10% 20px;
+
+            span {
+                font-size: 9px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width:768px) {
+    .services {
+        .heading {
+            font-size: 26px;
+        }
+
+        article {
+            margin: 10px 10% 20px;
+
+            span {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:970px) {
+    .services {
+        .heading {
+            font-size: 30px;
+        }
+
+        article {
+            margin: 10px 12% 20px;
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 971px) {
+    .services {
+        .heading {
+            font-size: 32px;
+        }
+
+        article {
+            margin: 10px 14% 20px;
+        }
+    }
 }
