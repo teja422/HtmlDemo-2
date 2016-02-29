@@ -39,6 +39,15 @@
 .services .subheading {
   font-weight: normal;
 }
+/*banner 2*/
+.banner2 {
+  padding: 0;
+  color: #000;
+}
+.banner2 p {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
 @media screen and (max-width: 361px) {
   .services .heading {
     font-size: 18px;
@@ -106,6 +115,9 @@
   }
   .services article {
     margin: 10px 14% 20px;
+  }
+  .banner2 p {
+    font-size: 36px;
   }
 }
 /*# sourceMappingURL=site.css.map */
