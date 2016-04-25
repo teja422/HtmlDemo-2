@@ -53,18 +53,130 @@
 }
 
 
-/*banner 2*/
-.banner2{
-    padding:0;
-    color:#000;
-    p{
+/*portfolio banner*/
+.portfolio-banner {
+    padding: 0;
+    color: #000;
+    img{
+        opacity:0.5;
+    }
+    .row {
+        position: absolute;
+        top: 0;
+        article:last-child{
+            font-weight:normal
+        }
+    }
+
+    article {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 32px;
+        margin-left: 16%;
+        margin-top: 10%;
+    }
+}
+
+/*Portfolio images*/
+.portfolio-images{
+    background-color:#ebe8e4;
+    text-transform:uppercase;
+    font-weight:bold;
+    .heading {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 4%;
+    }
+
+    article {
+        border-bottom: 1px solid #808080;
+        line-height: 0.1em;
+        margin: 10px 12% 20px;
+    }
+
+    span {
+        padding: 0 8px;
+        background: #ebe8e4;
+    }
+    .images{
+        margin: 2% 4% auto;
+        .image-row{
+            margin-bottom:2%;
+            img{
+                margin-bottom:4%;
+            }
+        }
+    }
+}
+
+/*Price Banner*/
+.price-banner {
+    padding: 0 !important;
+
+    .col-xs-12 {
+        padding: 0 !important;
+    }
+    .row {
+        position: absolute;
+        margin-top:12%;
+        margin-left:18%;
+        article:last-child{
+            font-weight:normal
+        }
+    }
+
+    article {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 32px;
+    }
+}
+
+/*Price content*/
+.price-content {
+    background-color: #334d68;
+    color: #fff;
+
+    .heading {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 4%;
+    }
+
+    article {
+        border-bottom: 1px solid #fff;
+        line-height: 0.1em;
+        margin: 10px 12% 20px;
+    }
+
+    span {
+        padding: 0 8px;
+        background: #334d68;
+    }
+    .price-table{
+        margin: 2% 18% auto;
         text-transform:uppercase;
-        font-weight:bolder;
+        .list-group-item {
+            background-color:#21425E;
+            border:none;
+            border-radius:0;
+            span{
+                background-color:#21425E;
+            }
+        }
+        .list-group-item:first-child{
+            background-color:#152B3F;
+            font-weight:bolder;
+        }
+        .list-group-item:nth-child(2){
+            background-color:#1C3A53;
+            font-weight:bolder;
+        }
     }
 }
 
 @media screen and (max-width:361px) {
-    .services {
+    .services, .portfolio-images, .price-content {
         .heading {
             font-size: 18px;
         }
@@ -77,10 +189,15 @@
             }
         }
     }
+    .portfolio-banner, .price-banner {
+        article{
+            font-size:12px;
+        }
+    }
 }
 
 @media screen and (min-width: 360px) and (max-width:481px) {
-    .services {
+    .services, .portfolio-images, .price-content {
         .heading {
             font-size: 20px;
         }
@@ -93,10 +210,15 @@
             }
         }
     }
+    .portfolio-banner, .price-banner {
+        article{
+            font-size:14px;
+        }
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width:541px) {
-    .services {
+    .services, .portfolio-images, .price-content {
         .heading {
             font-size: 24px;
         }
@@ -109,10 +231,15 @@
             }
         }
     }
+    .portfolio-banner, .price-banner {
+        article{
+            font-size:18px;
+        }
+    }
 }
 
 @media screen and (min-width: 540px) and (max-width:768px) {
-    .services {
+    .services, .portfolio-images, .price-content {
         .heading {
             font-size: 26px;
         }
@@ -128,10 +255,15 @@
             font-size:18px;
         }
     }
+    .portfolio-banner, .price-banner {
+        article{
+            font-size:20px;
+        }
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width:970px) {
-    .services {
+    .services, .portfolio-images, .price-content {
         .heading {
             font-size: 30px;
         }
@@ -147,10 +279,15 @@
             font-size:20px;
         }
     }
+    .portfolio-banner, .price-banner {
+        article{
+            font-size:24px;
+        }
+    }
 }
 
 @media screen and (min-width: 971px) {
-    .services {
+    .services, .portfolio-images, .price-content {
         .heading {
             font-size: 32px;
         }
@@ -159,8 +296,8 @@
             margin: 10px 14% 20px;
         }
     }
-    .banner2{
-        p{
+    .portfolio-banner, .price-banner {
+        article{
             font-size:36px;
         }
     }
